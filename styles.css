@@ -78,17 +78,37 @@ header h1{
 
 .btn{
     /* z-index: -2; */
+    animation: rot 3s infinite;
     text-decoration: none;
     color: white;
     background: #67c592;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 30px;
+    display: inline-block;    
+    border-radius: 30px;
+    box-shadow: -2px 3px 5px rgb(172, 172, 172);
+}
+.btn:hover{
+    background: #75c098;
+}
+.btn2{
+    /* z-index: -2; */
+    animation: pulse   5s infinite;
+    display: inline-block;
+    transform: rotate(120);
+    text-decoration: none;
+    color: white;
+    background:#fd6703;
     padding: 15px 30px;
     font-weight: bold;
     font-size: 30px;    
     border-radius: 30px;
     box-shadow: -2px 3px 5px rgb(172, 172, 172);
 }
-.btn:hover{
-    background: #75c098;
+.btn2:hover{
+    background: #d85e0d;
+    transform: scale(2,)
 }
 body{
     overflow: hidden;
@@ -137,4 +157,22 @@ canvas{
     background-size: cover;
 } */
 
+
+@keyframes pulse {
+    0% {
+      background-color: #001F3F;
+    }
+    100% {
+      background-color: #FF4136;
+    }
+  }
+@keyframes rot{
+    0% {
+        transform: rotate(0);
+
+    }
+    100% {
+            transform: rotate(360deg);
+    }
+}
 
